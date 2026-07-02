@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book your luxury spa appointment at Ocean Bliss Spa. Online booking form for Swedish, Deep Tissue, Aromatherapy, Hot Stone, Reflexology, and Executive massages. Open 24/7.">
+  <meta name="keywords" content="book massage Mombasa, spa appointment Nyali, luxury spa booking, massage reservation Mombasa, online booking spa Coast">
+  <title>Book Now | Ocean Bliss Spa | Schedule Your Luxury Spa Experience Nyali</title>
+  <link rel="icon" type="image/png" href="Title logo.png">
+  <link rel="shortcut icon" href="Title logo.png">
+  <link rel="apple-touch-icon" href="Title logo.png">
+  <link rel="stylesheet" href="sytles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">
+        <img src="Ocean_Bliss_Logo.png" alt="Ocean Bliss Spa Logo">
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="masseuses.html">Masseuses</a></li>
+        <li><a href="testimonial.html">Testimonials</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="tel:+254740815697" class="btn btn-call" aria-label="Call +254 740 815 697" title="Call +254 740 815 697">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1.02 1.02 0 00-1.02.24l-2.2 2.2a15.045 15.045 0 01-6.59-6.59l2.2-2.21c.28-.26.42-.63.35-1.01A11.36 11.36 0 018.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/>
+          </svg>
+          Call
+        </a></li>
+        <li><a href="https://wa.me/254740815697" class="btn btn-whatsapp" target="_blank">WhatsApp Us</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Booking Hero -->
+  <section class="hero hero-dark" id="booking-hero" style="height: 60vh; min-height: 400px; --bg-image: url('H4.jpg');">
+    <div class="container">
+      <div class="hero-content" style="padding-top: 30px; padding-right: 24px;">
+        <h1>Book Your <span>Appointment</span></h1>
+        <p class="hero-subtitle">Schedule your premium spa session at our Nyali location or book an outcall to your location</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section class="booking" id="booking">
+    <div class="container">
+      <div class="booking-grid">
+        <!-- Booking Form -->
+        <div class="booking-form">
+          <h3>Request an Appointment</h3>
+          <form id="bookingForm">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="Enter your email address">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required placeholder="+254 XXX XXX XXX">
+            </div>
+
+            <div class="form-group">
+              <label for="service">Select Service *</label>
+              <select id="service" name="service" required>
+                <option value="">-- Select a Service --</option>
+                <option value="swedish">Swedish Massage - KSh 5,500 (60 mins)</option>
+                <option value="deep-tissue">Deep Tissue Massage - KSh 6,500 (60 mins)</option>
+                <option value="aromatherapy">Aromatherapy Massage - KSh 6,000 (60 mins)</option>
+                <option value="hot-stone">Hot Stone Therapy - KSh 7,500 (60 mins)</option>
+                <option value="reflexology">Reflexology Massage - KSh 5,500 (60 mins)</option>
+                <option value="executive">Executive Sensual/Lingam Massage - KSh 8,500 (60 mins)</option>
+                <option value="four-hands">Four-Hands Luxury Massage - KSh 14,000 (60 mins)</option>
+                <option value="90min">90-Minute Session (Any Service +50%)</option>
+                <option value="couples">Couples Package (10% discount)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="date">Preferred Date *</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+              <label for="time">Preferred Time *</label>
+              <select id="time" name="time" required>
+                <option value="">-- Select a Time --</option>
+                <option value="morning">Morning (8:00 AM - 12:00 PM)</option>
+                <option value="afternoon">Afternoon (12:00 PM - 4:00 PM)</option>
+                <option value="evening">Evening (4:00 PM - 8:00 PM)</option>
+                <option value="night">Night (8:00 PM - 12:00 AM)</option>
+                <option value="late-night">Late Night (12:00 AM - 8:00 AM)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="therapist">Preferred Therapist (Optional)</label>
+              <select id="therapist" name="therapist">
+                <option value="">-- No Preference --</option>
+                <option value="sarah">Sarah Wanjiku - Senior Therapist</option>
+                <option value="grace">Grace Mwende - Aromatherapy Specialist</option>
+                <option value="james">James Mwangi - Sports & Deep Tissue Expert</option>
+                <option value="elizabeth">Elizabeth Achieng' - Executive Wellness</option>
+                <option value="mary">Mary Njeri - Holistic Therapy Expert</option>
+                <option value="diana">Diana Nyambura - Four-Hands Specialist</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="location">Location Preference *</label>
+              <select id="location" name="location" required>
+                <option value="">-- Select Location --</option>
+                <option value="nyali-spa">Visit Our Spa (Nyali Links Road)</option>
+                <option value="nyali-outcall">Outcall - Nyali (KSh 500-1,000)</option>
+                <option value="bamburi-outcall">Outcall - Bamburi (KSh 1,000-1,500)</option>
+                <option value="shanzu-outcall">Outcall - Shanzu (KSh 1,000-1,500)</option>
+                <option value="diani-outcall">Outcall - Diani Beach (KSh 1,500-2,000)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="notes">Special Requests or Health Notes</label>
+              <textarea id="notes" name="notes" placeholder="Any specific requirements, health concerns, allergies, or preferences..."></textarea>
+            </div>
+
+            <button type="submit" class="btn" style="width: 100%;">Submit Booking Request</button>
+          </form>
+
+          <div id="formMessage" style="display: none; margin-top: 20px; padding: 15px; border-radius: 5px; text-align: center;"></div>
+        </div>
+
+        <!-- Booking Info -->
+        <div class="booking-info">
+          <h3>Booking Information</h3>
+          
+          <div class="info-item">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+              </svg>
+            </div>
+            <div class="info-content">
+              <h4>Our Location</h4>
+              <p>Nyali Links Road, Near City Mall, Mombasa</p>
+              <p style="margin-top: 5px; font-size: 0.9rem; color: var(--text-muted);">Free parking available on premises</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+              </svg>
+            </div>
+            <div class="info-content">
+              <h4>Operating Hours</h4>
+              <p><strong>Open 24/7</strong></p>
+              <p style="margin-top: 5px; font-size: 0.9rem; color: var(--text-muted);">365 days a year, including holidays</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1.02 1.02 0 00-1.02.24l-2.2 2.2a15.045 15.045 0 01-6.59-6.59l2.2-2.21c.28-.26.42-.63.35-1.01A11.36 11.36 0 018.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/>
+              </svg>
+            </div>
+            <div class="info-content">
+              <h4>Contact Us</h4>
+              <p>Phone: +254 740 815 697</p>
+              <p>Email: info@oceanblissspa.co.ke</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/>
+              </svg>
+            </div>
+            <div class="info-content">
+              <h4>Payment Methods</h4>
+              <p>Cash, M-Pesa, Card, Bank Transfer</p>
+              <p style="margin-top: 5px; font-size: 0.9rem; color: var(--text-muted);">Payment due at time of service</p>
+            </div>
+          </div>
+
+          <div style="background: var(--bg-secondary); padding: 20px; border-radius: 8px; margin-top: 20px; border-left: 4px solid var(--gold);">
+            <h4 style="color: var(--gold); margin-bottom: 10px;"> Booking Policy</h4>
+            <ul style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.8; padding-left: 20px;">
+              <li>Please arrive 10 minutes before your appointment</li>
+              <li>24-hour cancellation policy</li>
+              <li>Late arrivals may result in shortened session</li>
+              <li>All services require advance booking</li>
+            </ul>
+          </div>
+
+          <a href="https://wa.me/254740815697?text=Hello%20Ocean%20Bliss%20Spa%2C%20I%20would%20like%20to%20book%20an%20appointment.%20Here%20are%20my%20details%3A%0A%0AName%3A%0APhone%3A%0AService%3A%0ADate%3A%0ATime%3A" class="whatsapp-cta" target="_blank">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            <div>
+              <strong>Quick Booking via WhatsApp</strong>
+              <p style="margin: 0; font-size: 0.9rem; opacity: 0.9;">Instant confirmation • 24/7 support</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section style="background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(212, 175, 55, 0.05)); padding: 80px 0; text-align: center;">
+    <div class="container">
+      <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: var(--text-primary);">Prefer to Book Directly?</h2>
+      <p style="font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">Call or WhatsApp us for immediate booking confirmation. Our team is available 24/7 to assist you.</p>
+      <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+        <a href="tel:+254740815697" class="btn">Call Us Now</a>
+        <a href="https://wa.me/254740815697?text=Hello%20Ocean%20Bliss%20Spa%2C%20I%20would%20like%20to%20book%20an%20appointment" class="btn btn-whatsapp" target="_blank">Chat on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="Ocean_Bliss_Logo.png" alt="Ocean Bliss Spa Logo">
+          </a>
+          <p>Nyali's premier luxury spa destination. Experience world-class massage therapies, professional therapists, and ultimate relaxation at our Nyali location or via premium outcall services across the Coast.</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="masseuses.html">Masseuses</a></li>
+            <li><a href="testimonial.html">Testimonials</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="services.html">Swedish Massage</a></li>
+            <li><a href="services.html">Deep Tissue Massage</a></li>
+            <li><a href="services.html">Aromatherapy</a></li>
+            <li><a href="services.html">Hot Stone Therapy</a></li>
+            <li><a href="services.html">Reflexology</a></li>
+            <li><a href="services.html">Executive Massage</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact Info</h4>
+          <ul>
+            <li> Nyali Links Road, Near City Mall, Mombasa</li>
+            <li> +254 740 815 697</li>
+            <li> info@oceanblissspa.co.ke</li>
+            <li> Open 24/7</li>
+          </ul>
+          <a href="https://wa.me/254740815697" class="btn btn-whatsapp" target="_blank" style="margin-top: 15px; display: inline-block; width: 100%;">WhatsApp Us</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ocean Bliss Spa | Powered by <a href="https://wa.me/254799791167" target="_blank" rel="noopener noreferrer">ObondiGroup Technologies <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 12px; height: 12px; display: inline-block; margin-left: 4px; vertical-align: middle;"><path d="M7 17L17 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 7H17V16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chat/Booking Modal -->
+  <div class="modal" id="chatModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3><i class="ph ph-chat-circle-dots"></i> Chat with Us</h3>
+        <button class="modal-close" onclick="closeModal()"><i class="ph ph-x"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-guide">
+          <h4><i class="ph ph-info"></i> How to Book</h4>
+          <ul>
+            <li>Fill in your details below</li>
+            <li>Select your preferred service</li>
+            <li>Choose date and time</li>
+            <li>We'll confirm via WhatsApp instantly</li>
+          </ul>
+        </div>
+        <form id="modalBookingForm">
+          <div class="modal-form-group">
+            <label><i class="ph ph-user"></i> Your Name *</label>
+            <input type="text" id="modalName" required placeholder="Enter your full name">
+          </div>
+          <div class="modal-form-group">
+            <label><i class="ph ph-phone"></i> Phone Number *</label>
+            <input type="tel" id="modalPhone" required placeholder="+254 XXX XXX XXX">
+          </div>
+          <div class="modal-form-group">
+            <label><i class="ph ph-spa"></i> Service *</label>
+            <select id="modalService" required>
+              <option value="">-- Select Service --</option>
+              <option value="swedish">Swedish Massage - KSh 5,500</option>
+              <option value="deep-tissue">Deep Tissue Massage - KSh 6,500</option>
+              <option value="aromatherapy">Aromatherapy Massage - KSh 6,000</option>
+              <option value="hot-stone">Hot Stone Therapy - KSh 7,500</option>
+              <option value="reflexology">Reflexology Massage - KSh 5,000</option>
+              <option value="executive">Executive Sensual/Lingam - KSh 8,500</option>
+              <option value="four-hands">Four-Hands Luxury - KSh 12,000</option>
+            </select>
+          </div>
+          <div class="modal-form-group">
+            <label><i class="ph ph-calendar"></i> Preferred Date *</label>
+            <input type="date" id="modalDate" required>
+          </div>
+          <div class="modal-form-group">
+            <label><i class="ph ph-clock"></i> Preferred Time *</label>
+            <select id="modalTime" required>
+              <option value="">-- Select Time --</option>
+              <option value="morning">Morning (8AM - 12PM)</option>
+              <option value="afternoon">Afternoon (12PM - 4PM)</option>
+              <option value="evening">Evening (4PM - 8PM)</option>
+              <option value="night">Night (8PM - 12AM)</option>
+            </select>
+          </div>
+          <div class="modal-form-group">
+            <label><i class="ph ph-chat-text"></i> Message (Optional)</label>
+            <textarea id="modalMessage" placeholder="Any special requests or questions..."></textarea>
+          </div>
+          <button type="submit" class="modal-submit">
+            <i class="ph ph-whatsapp-logo"></i>
+            Send via WhatsApp
+          </button>
+        </form>
+        <div class="modal-info">
+          Or call us directly: <a href="tel:+254740815697">+254 740 815 697</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WhatsApp Floating Widget -->
+  <div class="whatsapp-widget">
+    <div class="whatsapp-tooltip">Chat with us now</div>
+    <a href="https://wa.me/254740815697?text=Hello%20Ocean%20Bliss%20Spa%2C%20I%20would%20like%20to%20inquire%20about%20your%20services" class="whatsapp-button" target="_blank" aria-label="Chat on WhatsApp">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+  </div>
+
+  <script>
+    // Modal functionality
+    function openModal() {
+      document.getElementById('chatModal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      document.getElementById('chatModal').classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+
+    document.getElementById('chatModal').addEventListener('click', function(e) {
+      if (e.target === this) closeModal();
+    });
+
+    document.getElementById('modalBookingForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('modalName').value;
+      const phone = document.getElementById('modalPhone').value;
+      const service = document.getElementById('modalService').value;
+      const date = document.getElementById('modalDate').value;
+      const time = document.getElementById('modalTime').value;
+      const message = document.getElementById('modalMessage').value;
+      const whatsappMessage = `Hello Ocean Bliss Spa,%0A%0AI would like to book an appointment.%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Service:* ${encodeURIComponent(service)}%0A*Date:* ${encodeURIComponent(date)}%0A*Time:* ${encodeURIComponent(time)}%0A*Message:* ${encodeURIComponent(message || 'No special requests')}`;
+      window.open('https://wa.me/254740815697?text=' + whatsappMessage, '_blank');
+      closeModal();
+    });
+
+    document.getElementById('modalDate').setAttribute('min', new Date().toISOString().split('T')[0]);
+
+    // Form submission handler
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form values
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const service = document.getElementById('service').value;
+      const date = document.getElementById('date').value;
+      const time = document.getElementById('time').value;
+      const location = document.getElementById('location').value;
+      
+      // Create WhatsApp message
+      const whatsappMessage = `Hello Ocean Bliss Spa,%0A%0AI would like to book an appointment.%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Service:* ${encodeURIComponent(service)}%0A*Date:* ${encodeURIComponent(date)}%0A*Time:* ${encodeURIComponent(time)}%0A*Location:* ${encodeURIComponent(location)}`;
+      
+      const formMessage = document.getElementById('formMessage');
+      formMessage.style.display = 'block';
+      formMessage.style.background = 'rgba(37, 211, 102, 0.1)';
+      formMessage.style.border = '1px solid var(--whatsapp)';
+      formMessage.style.color = 'var(--whatsapp)';
+      formMessage.innerHTML = '<strong>Thank you for your booking request!</strong><br>Please complete your booking via WhatsApp for instant confirmation.<br><br><a href="https://wa.me/254740815697?text=' + whatsappMessage + '" class="btn btn-whatsapp" target="_blank" style="display: inline-block; margin-top: 10px;">Complete Booking on WhatsApp</a>';
+      
+      // Scroll to message
+      formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+
+    // Set minimum date to today
+    document.getElementById('date').setAttribute('min', new Date().toISOString().split('T')[0]);
+    
+    // Add therapist selection enhancement
+    const therapistSelect = document.getElementById('therapist');
+    if (therapistSelect) {
+      therapistSelect.addEventListener('change', function() {
+        const selectedTherapist = this.value;
+        if (selectedTherapist) {
+          const notesField = document.getElementById('notes');
+          const currentNotes = notesField.value;
+          const therapistName = this.options[this.selectedIndex].text;
+          if (!currentNotes.includes('Preferred Therapist:')) {
+            notesField.value = currentNotes + (currentNotes ? '\n\n' : '') + 'Preferred Therapist: ' + therapistName;
+          }
+        }
+      });
+    }
+
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+  <script src="scripts.js"></script>
+</body>
+</html>
